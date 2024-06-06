@@ -2,14 +2,13 @@ exports.creditCheck = function(str) {
     let reversed_arr = reversing_array(str)
     let added_two_arr = add_two_e_other_num(reversed_arr)
     return summing_results(added_two_arr)
-
 }
 
 
 function reversing_array(str) {
     let arr = str.split("")
     let reversed_arr = []
-
+    
     for (let i = (arr.length) - 1; i >= 0; i--) {
         reversed_arr.push(Number(arr[i]))
     }
